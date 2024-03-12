@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Todo el tema de la meta informacion para el navegador -->
+    <!-- Etiqueta metatags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="autor" content="Christian Aguilar">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/styles.css">  
+    <link rel="stylesheet" href="./css/responsive.css" /> 
+    <!--La forma de hacer un estilo directo
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+    </style>
+    -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+</head>
+<body>
+    <!--todo lo relacionado con la pagina - la parte visual -->
+    <main>
+        <!-- Encabezado -->
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">C<span>A</span></a>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="#portfolio">Portafolio</a></li> <!--#portofolio-->
+                            <li><a href="#about">Acerca de</a></li>
+                            <li><a href="#testimonials">Testimonios</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <!--20230310-->
+                            <li><a href="#projects">Proyectos</a></li>
+              <!--20230310-->
+                            <li><a href="https://wa.me/+573152592676" 
+                                class="active" 
+                                target="_blank"
+                                >Wahtsapp</a></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-menu">
+                      <i class="fas fa-bars fa-lg"></i>  
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Contenido para el header -->
+            <div class="header-content">
+                <!--vamos a tener el contenedor y las dos columnas-->
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-title">Christian <span>Aguilar</span></h1>
+                        <p class="text">¡Hola! Soy Christian Aguilar, un apasionado desarrollador web y diseñador con experiencia en HTML, CSS y JavaScript. ¡Déjame convertir tus ideas en realidad y crear experiencias web increíbles juntos!
+                        </p>
+                        <a href="https://drive.google.com/file/d/1L28RlA9NN2an8AIdvaqMd3-tAD7nVEWe/view?usp=drive_link"
+                            target="_blank" 
+                            download
+                        >
+                            <button class="btn">Descargar CV</button>
+                        </a>
+                    </div>
+                    <!-- Imagen principal para el header -->
+                    <div class="column-2 image">
+                        <img
+                            src="./img/shapes/points2.svg"
+                            alt=""
+                            class="points points2"
+                        >
+                        <img
+                            src="./img/person.png"
+                            alt=""
+                            class="img-element z-index"
+                        >
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+      <!-- Sección de servicios -->
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Lo que hago">Servicios</h3>
+            <p class="text">
+              Somos los especialistas de Desarrollo ideales para su compañía.
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card" data-card="UI/UX">
+              <div class="card-content z-index">
+                <img src="./img/design-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Diseño WEB</h3>
+                <p class="text">
+                  ¿No tienes página web?. Si no apareces en internet en la actualidad, no existes. 
+                  Puedes crecer tu empresa rápidamente con nuestro diseño de páginas web.
+                </p>
+                <a href="#portfolio" class="btn small">Ver más</a>
+              </div>
+            </div>
+
+            <div class="card" data-card="Code">
+              <div class="card-content z-index">
+                <img src="./img/code-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Desarrollo WEB</h3>
+                <p class="text">
+                  Toda empresa ya sea grande, mediana o pequeña necesita y debe tener un sitio web 
+                  ya que brinda una imagen profesional de la empresa, ventajas competitivas 
+                  y valores agregados para el cliente.
+                </p>
+                <a href="#portfolio" class="btn small">Ver más</a>
+              </div>
+            </div>
+
+            <div class="card" data-card="App">
+              <div class="card-content z-index">
+                <img src="./img/app-icon.svg" class="icon" alt="" />
+                <h3 class="title-sm">Desarrollo de Apps</h3>
+                <p class="text">
+                  Sus clientes podrán ingresar al sitio web desde cualquier dispositivo móvil. 
+                  ¡Somos tu agencia de diseño web! marketing digital. Diseño web a la medida
+                </p>
+                <a href="#portfolio" class="btn small">Ver más</a>
+              </div>
+            </div>
+
+            <div class="card" data-card="PL/SQL">
+              <div class="card-content z-index">
+                <img src="./img/codigo_pl.png" class="icon" alt="" />
+                <h3 class="title-sm">Oracle PL/SQL</h3>
+                <p class="text">
+                  Somos especialistas en Desarrollo para Oracle PL/SQL. Podemos hacer customizaciones 
+                  en OEBS, ERP Cloud, Oracle APEX .
+                </p>
+                <a href="#portfolio" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Sección de proyectos 20240310-->
+
+       <section class="portfolio section" id="portfolio">
+        <div class="background-bg"></div>
+
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Mis proyectos">Portafolio</h3>
+          </div>
+
+          <div class="section-body">
+            <div class="filter button-group">
+              <button class="filter-btn active" data-filter="*">Todo</button>
+              <button class="filter-btn" data-filter=".ui">UI/UX</button>
+              <button class="filter-btn" data-filter=".webdev">WEB</button>
+              <button class="filter-btn" data-filter=".appdev">Apps</button>
+              <button class="filter-btn" data-filter=".logo-design">Diseño</button>
+              <button class="filter-btn" data-filter=".pl-sql">PL/SQL</button>
+            </div>
+
+            <div class="grid">
+              <div class="grid-item logo-design">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/diseno-logo.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Diseño de Logo</h3>
+                      <a href="https://www.youtube.com/watch?v=t-DgV02xuS4&ab_channel=RipTools"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/desarrollo-web.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo WEB</h3>
+                      <a href="https://www.youtube.com/shorts/RdC8UZKTkF8"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/ui-vs-ux.png" alt=""/>
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Diseño UI / UX</h3>
+                      <a href="https://www.youtube.com/shorts/A9K3g2tBDkk"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/web-app.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo de Apps</h3>
+                      <a href="https://www.youtube.com/watch?v=3HmliBwSCf0&ab_channel=ACODEINVENTIONLTD"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item appdevui"><!--appdev ui-->
+                <div class="gallery-image">
+                  <img src="./img/portfolio/web-app2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo de Apps</h3>
+                      <a href="https://www.youtube.com/watch?v=3HmliBwSCf0&ab_channel=ACODEINVENTIONLTD"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item ui webdev">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/diseno-web2.jpg" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Diseño WEB</h3>
+                      <a href="https://www.youtube.com/shorts/Iw6eco2PWRc"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--20240310 CA-->
+              <div class="grid-item pl-sql">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/pl-sql-services.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo PL/SQL</h3>
+                      <a href="https://www.youtube.com/watch?v=DLLoxsziSiA&ab_channel=OpenWebinars"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item pl-sql">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/pl-sql-services2.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo PL/SQL</h3>
+                      <a href="https://www.youtube.com/watch?v=DLLoxsziSiA&ab_channel=OpenWebinars"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item pl-sql">
+                <div class="gallery-image">
+                  <img src="./img/portfolio/pl-sql-services3.png" alt="" />
+                  <div class="img-overlay">
+                    <div class="plus"></div>
+                    <div class="img-description">
+                      <h3>Desarrollo PL/SQL</h3>
+                      <a href="https://www.youtube.com/watch?v=DLLoxsziSiA&ab_channel=OpenWebinars"
+                        target="_blank" 
+                      >
+                        <h5>Ver demo</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="more-folio">
+              <a href="https://drive.google.com/file/d/1um6e7lcvFVaFcIQO9cqHMqwUgZ3Itrgz/view?usp=drive_link" 
+                class="btn"
+                target="_blank"
+              >Mas proyectos</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de contacto -->
+
+      <section class="contact" id="contact">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5499407704997!2d-76.53150722434957!3d3.458962251168651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a66bce1d282f%3A0x6083e7032572ab74!2sTorre%20de%20Cali%2C%20San%20Vicente%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1685288627915!5m2!1ses!2sco"
+          width="100%"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <h3 class="title">Ponte en contacto</h3>
+              <p class="text">
+                Estamos dispuestos a brindar el mejor asesoramiento de acuerdo a las consultas que puedan surgir. Por esto, escribemos y en la brevedad estaremos en contacto.
+              </p>
+              <div class="information-wrap">
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p class="info-text">Cali. Colombia</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <p class="info-text">caguilarpamo@gmail.com</p>
+                </div>
+
+                <div class="information">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p class="info-text">(+57) 315 259 2676</p>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form"
+              action="https://formsubmit.co/bb5c9c24436eea8f95bbb0f4b6f17876"
+              method="POST"
+            ><!--caguilarpamo@gmail.com - bb5c9c24436eea8f95bbb0f4b6f17876-->
+              <h3 class="title">Contáctame</h3>
+              <div class="row">
+                <input type="text" class="contact-input" placeholder="Nombre" />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Apellido"
+                />
+              </div>
+
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Celular"
+                />
+                <input type="email" class="contact-input" placeholder="Email" />
+              </div>
+
+              <div class="row">
+                <textarea
+                  name="message"
+                  class="contact-input textarea"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <!--<a href="#" class="btn">Enviar</a>-->
+              <input type="submit" 
+                class="btn" 
+                value="Enviar"
+              >
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="hireme" id="hireme">
+        <div class="container">
+          <h3 class="title">Hablemos de tu proyecto</h3>
+          <p class="text">
+            Escribemos! Te brindaremos el asesoramiento ideal para que puedas aclarar tus inquietudes y con ello construir
+            el mejor requerimiento.
+          </p>
+          <a href="https://wa.me/+573152592676" target="_blank" class="btn"
+            >WhatsApp</a
+          >
+        </div>
+      </section>
+
+      <!-- Sección blog y testimonios -->
+
+      <section class="blog section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Últimos post">Mi Blog</h3>
+            <p class="text">
+              Algunas imagenes de nuestros procesos.
+            </p>
+          </div>
+
+          <div class="blog-wrapper">
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./img/portfolio/pl-sql-services4.png" alt="" />
+              </div>
+
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">Marzo, 19 2023</h5>
+                  <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                </div>
+                <h3 class="title-sm">Desarrollo en PL/SQL</h3>
+                <p class="blog-text">
+                  Realizando algunos ajustes a un package que realiza la valicación en un proceso comercial.
+                </p>
+                <a href="#portfolio" class="btn small">Leer más</a>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./img/portfolio/ux-ui.png" alt="" />
+              </div>
+
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">Agosto, 10 2022</h5>
+                  <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                </div>
+                <h3 class="title-sm">Análisis UX | UI</h3>
+                <p class="blog-text">
+                  A pesar de que el UX (User Experience) y UI (User Interface) tienen 
+                  nombres parecidos son completamente diferentes. Mientras que uno 
+                  hace referencia a la experiencia y sensación del usuario, el otro 
+                  está dirigido hacia un lado más racional de la navegación.
+                </p>
+                <a href="#portfolio" class="btn small">Leer más</a>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-image">
+                <img src="./img/portfolio/diseno-web2.jpg" alt="" />
+              </div>
+
+              <div class="blog-content">
+                <div class="blog-info">
+                  <h5 class="blog-date">December, 12 2021</h5>
+                  <h5 class="blog-user"><i class="fas fa-user"></i>Admin</h5>
+                </div>
+                <h3 class="title-sm">Conociendo sobre el desarrollo Web</h3>
+                <p class="blog-text">
+                  El desarrollo web es un proceso complejo que implica la creación 
+                  de productos digitales en línea. También es un término que define 
+                  la creación de sitios web para Internet o una intranet.
+                </p>
+                <a href="#" class="btn small">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Qué dicen de nosotros">
+              Testimonios
+            </h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Excelente colaborador, proactivo, con vocación de liderazgo, altamente comprometido con la 
+                      organización a la que pertenezca y siempre en pro de mejorar sus procesos a cargo.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Angie Lorena Lopez Cuenca</h3>
+                      <h5 class="review-job">Asistente de Gerencia, Cali</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Comprometido con sus labores, dando la milla extra para lograr los objetivos
+                      a nivel personal y corporativo.
+                      Excelente ser humano!
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Pedronel Escobar</h3>
+                      <h5 class="review-job">Director IT, Cali</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/testi.svg" alt="" class="img-element" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección acerca de -->
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Quien soy yo">Acerca de</h3>
+          </div>
+
+          <div class="section-body grid-2">
+            <div class="column-1">
+              <h3 class="title-sm">Hola, Yo soy Christian Aguilar</h3>
+              <p class="text">
+                Un ingeniero de sistemas apasionado por el desarrollo web, diseñando con experiencia en HTML, CSS y JavaScript.
+                Christian Andrés tiene excelentes relaciones interpersonales, con habilidad de trabajo en equipo e individual. Ha sido parte del equipo de proyectos importantes en los cuales se ha caracterizado por responsabilidad, adaptación al cambio, su constante generación de ideas y nuevas técnicas para mejorar los procesos actuales y desarrollar los requerimientos del negocio.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+                <div class="skill pl/sql">
+                  <h3 class="skill-title">PL/SQL</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="95%"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="https://drive.google.com/file/d/1um6e7lcvFVaFcIQO9cqHMqwUgZ3Itrgz/view?usp=drive_link" 
+                class="btn"
+                target="_blank"
+              >
+              Ver más</a>
+            </div>
+
+            <div class="column-2 image">
+              <img src="./img/shapes/points4.svg" class="points" alt="" />
+              <img src="./img/about.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Proyectos 20230310 Inicio -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Expresiones bajo nuestra experiencia">
+              Proyectos
+            </h3>
+          </div>
+
+          <div class="testi-content grid-2">
+            <div class="column-1 reviews">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Desarrollo de interfaz para recibir desde una aplicación tercera la información de Clientes 
+                      y su respectiva facturación, para ser creada en EBS, la cual será transmitida a la Dian como Facturación Electrónica.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Grupo de carga Aviatur, Coomeva, Havas Media Group,Furukawa, Berry Global, Imocom</h3>
+                      <h5 class="review-job">Implementadores directos</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Se está desarrollando el proceso para que permita obtener la información de 
+                      una aplicación tercera y con ello llevar la información hasta la contabilidad 
+                      a un nivel de detalle por cada cliente y sus diferentes parametrizaciones como 
+                      lo son las cuentas, medio, soporte entre otros.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Havas Medi Group México</h3>
+                      <h5 class="review-job">Desarrollador</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-2 image">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Desarrollo para la modificación que se debe realizar en las Carga 
+                      de cuentas de estado provenientes del Banco Santander al módulo CE.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">Havas Media Group Chile</h3>
+                      <h5 class="review-job">Desarrollador</h5>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide review">
+                    <i class="fas fa-quote-left quote"></i>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+
+                    <p class="review-text">
+                      Interfaz de facturación con Aplicación tercera – ARGOS.
+                      Se realiza el proceso de validación e importación de la información a facturar, 
+                      cuando son Notas Crédito de Tipo Reintegro al Cliente. Esta información es 
+                      creada en la aplicación ARGOS, para que OF la procese.
+                    </p>
+
+                    <div class="review-info">
+                      <h3 class="review-name">TC Buen Colombia</h3>
+                      <h5 class="review-job">Desarrollador</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review-nav swiper-button-prev">
+                  <i class="fas fa-long-arrow-alt-left"></i>
+                </div>
+                <div class="review-nav swiper-button-next">
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sección de Proyectos 20230310 Fin -->
+
+    </main>
+
+    <!-- Sección pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">Acerca de</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              officiis quo officia quia?
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Servicios</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portafolio</a>
+              </li>
+              <li>
+                <a href="#about">Acerca de</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonios</a>
+              </li>
+              <li>
+                <a href="#contact">Contacto</a>
+              </li>
+              <!--20230310-->
+              <li>
+                <a href="#projects">Proyectos</a>
+              </li>
+              <!--20230310-->
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Servicios</h3>
+            <ul>
+              <li>
+                <a href="#">Diseño WEB</a>
+              </li>
+              <li>
+                <a href="#">Desarrollo WEB</a>
+              </li>
+              <li>
+                <a href="#">Diseño de Apps</a>
+              </li>
+              <li>
+                <a href="#">Marketing</a>
+              </li>
+              <li>
+                <a href="#">Diseño UI/UX</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Suscríbete</h3>
+            <p class="text">
+              Suscribete a nuestro staff y comienza a trabajar con nosotros.
+              Calidad de vida y sobre todo, crecimiento a nivel personal y profesional.
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2024 | Hecho por
+              <a href="#" class="split-text"> Christian Aguilar </a>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Sígueme</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="https://www.facebook.com/christbonnet/" 
+                  class="active"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/caguilarpamo"
+                  class="active"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/caguilarpamo/"
+                  class="active"
+                  target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/caguilarpamo/"
+                  class="active"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
